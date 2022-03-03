@@ -1,0 +1,15 @@
+<div class="container-fluid row">
+    <div class="container-fluid col-lg-6">
+        <app-recipe-card *ngFor="let rec of recipes; let i = index;" [recipe]="recipes[i]" (clicked)="recipeClickHandler($event)"></app-recipe-card>
+    </div>
+    <div class="container-fluid col-lg-6">
+        <app-recipe-description *ngIf="selected.recipeName !== ''" [details]="selected"></app-recipe-description>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <button class="btn-lg btn-success" (click)="newRecipeClickHandler()">New Recipe</button>
+</div>
+
+<app-add-recipe *ngIf="isNewRecipeVisible" [recipeId]="recipes.length" (newRecipe)="addNewRecipe($event)"></app-add-recipe>

@@ -1,0 +1,12 @@
+.recipe-icon {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.border-style {
+    border-width: 1px;
+    border-color: grey;
+    border-style: dotted;
+    border-radius: 10px;
+    cursor: pointer;
+}

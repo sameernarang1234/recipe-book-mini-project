@@ -1,0 +1,8 @@
+<div class="container mt-4">
+    <h1>{{details.recipeName}}</h1>
+    <p><strong>Description:</strong> {{details.recipeDescription}}</p>
+    <div class="dropdown">
+        <button class="btn btn-success mt-3" appHoverMouse (mouseEvent)="toggleDropdownVisibility($event)">Manage Recipe</button>
+        <app-drop-down [details]="dropdownEntries" *ngIf="dropdownVisibility"></app-drop-down>
+    </div>
+</div>

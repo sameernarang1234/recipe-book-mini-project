@@ -1,0 +1,15 @@
+<div class="container my-4 row">
+    <div class="container col-4">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Recipe Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="recipeName" name="recipeName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Description</label>
+                <textarea type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="recipeDescription" name="recipeDescription"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="addNewRecipe()">Add</button>
+            </form>
+    </div>
+</div>

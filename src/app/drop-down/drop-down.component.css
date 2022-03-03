@@ -1,0 +1,12 @@
+.dropdown-list {
+    list-style: none;
+    background-color: rgb(97, 97, 97);
+    width: 12vw;
+    border-radius: 5px;
+    color: white;
+}
+
+.dropdown-list li a {
+    text-decoration: none;
+    color: white;
+}
